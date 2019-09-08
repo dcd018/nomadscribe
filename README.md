@@ -4,7 +4,7 @@ A decentralized location service that utilizes the Arweave Network to permanentl
 
 #### How it was built
 
-Integrates [ArweaveID](https://github.com/shenwilly/arweaveID)! Nomadscribe is a React App that uses the HTML5 Location API. It utilizes OSM Nominatim to reverse geocode your location and tags a transaction with geohash prefixes at all possible precisions that eventually gets mined to an Arweave block. In first determining the precision of a current viewport by comparing it’s bounds to metric dimensions for cells covered by various string lengths in a worst case scenario at the equator, any transaction submitted at the same precision or zoom level can be queried with ArQL and displayed on a map.
+Integrates with [ArweaveID](https://github.com/shenwilly/arweaveID)! Nomadscribe is a React App that uses the HTML5 Location API. It utilizes OSM Nominatim to reverse geocode your location and tags a transaction with geohash prefixes at all possible precisions that eventually gets mined to an Arweave block. In first determining the precision of a current viewport by comparing it’s bounds to metric dimensions for cells covered by various string lengths in a worst case scenario at the equator, any transaction submitted at the same precision or zoom level can be queried with ArQL and displayed on a map.
 
 #### How it works
 
