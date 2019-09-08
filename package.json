@@ -1,0 +1,80 @@
+{
+  "name": "nomadscribe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.3.2",
+    "@material-ui/icons": "^4.2.1",
+    "@turf/area": "^6.0.1",
+    "@turf/bbox": "^6.0.1",
+    "@turf/bbox-clip": "^6.0.3",
+    "@turf/bbox-polygon": "^6.0.1",
+    "@turf/boolean-equal": "^6.0.1",
+    "@turf/boolean-within": "^6.0.1",
+    "@turf/buffer": "^5.1.5",
+    "@turf/center": "^6.0.1",
+    "@turf/destination": "^6.0.1",
+    "@turf/distance": "^6.0.1",
+    "@turf/helpers": "^6.1.4",
+    "@turf/square-grid": "^6.0.2",
+    "arweave": "^1.4.1",
+    "axios": "^0.19.0",
+    "bottleneck": "^2.19.5",
+    "classnames": "^2.2.6",
+    "leaflet": "^1.5.1",
+    "leaflet-control-geocoder": "^1.9.0",
+    "leaflet-overpass-layer": "^2.8.3",
+    "lodash": "^4.17.15",
+    "ngeohash": "^0.6.3",
+    "node-fetch": "^2.6.0",
+    "overlapping-marker-spiderfier-leaflet": "^0.2.7",
+    "query-overpass": "^1.5.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-dropzone": "^10.1.7",
+    "react-geolocated": "^2.5.0",
+    "react-leaflet": "^2.4.0",
+    "react-leaflet-control": "^2.1.1",
+    "react-leaflet-div-icon": "^1.1.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.0",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5",
+    "styled-components": "^4.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build": "npm run build:react && npm run build:bundle",
+    "build:react": "react-scripts build",
+    "build:bundle": "webpack --config webpack.config.js",
+    "deploy": "npm run build && arweave deploy ./dist/index.html --package"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "redux-devtools-extension": "^2.13.8",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack-cli": "^3.3.7"
+  }
+}
