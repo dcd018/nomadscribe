@@ -13,7 +13,7 @@ Your location is shared at your own discretion. Geohash prefixes are generated u
 
 Your location gets reverse geocoded by OSM Nominatim. The transaction used to query your location is tagged with a human readable string of the place’s display name and all possible geohash prefix lengths.
 
-Zooming and panning will cause a re-render in which the current viewport center’s geohash prefix at a precision that correlates with the current zoom level is used to recursively find all neighboring geohashes in every direction at the same precision until the viewport’s bounds are reached. Transactions with equal geohash prefixes are then queried at each precision with ArQL 
+Zooming and panning will cause a re-render in which the current viewport center’s geohash prefix at a precision correlating with the current zoom level is used to recursively find all neighboring geohashes in every direction at the same precision until the viewport’s bounds are reached. Transactions with equal geohash prefixes are then queried at each precision with ArQL.
 
 Try it out! The following cities already have mined transactions associated with them
 - London, England
