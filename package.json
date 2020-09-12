@@ -30,7 +30,7 @@
     "leaflet-overpass-layer": "^2.8.3",
     "lodash": "^4.17.19",
     "ngeohash": "^0.6.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "overlapping-marker-spiderfier-leaflet": "^0.2.7",
     "query-overpass": "^1.5.3",
     "react": "^16.9.0",
